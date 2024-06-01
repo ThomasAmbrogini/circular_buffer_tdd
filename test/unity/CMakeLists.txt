@@ -1,0 +1,5 @@
+include_directories(${CMAKE_SOURCE_DIR}/src)
+add_executable(circular_buffer_test circular_buffer_test.c)
+target_link_libraries(circular_buffer_test circular_buffer unity)
+add_test(circular_buffer_ctest circular_buffer_test)
+
